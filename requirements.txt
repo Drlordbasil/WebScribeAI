@@ -1,0 +1,15 @@
+The package requirements for this Python program are:
+
+- requests: for making HTTP requests
+- bs4 (BeautifulSoup): for parsing HTML content
+- transformers: for using HuggingFace's pipelines
+- text-classification: for performing text classification using HuggingFace's small models
+- summarization: for summarizing text using HuggingFace's small models
+- sentiment-analysis: for performing sentiment analysis using HuggingFace's small models
+- text-2-keyword: for extracting keywords from the text using natural language processing techniques
+
+To install these packages, you can use the pip package manager. You can run the following command to install all the required packages:
+
+```
+pip install requests bs4 transformers
+```
