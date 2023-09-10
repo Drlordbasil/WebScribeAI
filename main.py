@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from transformers import pipeline
 
+
 class WebScraper:
     def __init__(self, search_query):
         self.search_query = search_query
@@ -157,7 +158,8 @@ sentiment_analysis_result = sentiment_analyzer.analyze_sentiment("Sample text")
 keyword_extractor = KeywordExtractor()
 extracted_keywords = keyword_extractor.extract_keywords("Sample text")
 
-recommendation_engine = RecommendationEngine(content_aggregator.categorized_content, user_preferences)
+recommendation_engine = RecommendationEngine(
+    content_aggregator.categorized_content, user_preferences)
 recommendation_engine.generate_recommendations()
 
 ad_revenue_integration = AdRevenueIntegration(scraped_content)
@@ -166,5 +168,6 @@ ad_revenue_integration.incorporate_ads()
 dynamic_content_updater = DynamicContentUpdater(selected_websites)
 dynamic_content_updater.monitor_websites()
 
-performance_tracker = PerformanceTracker(scraped_content, sentiment_analysis_results, ad_revenue)
+performance_tracker = PerformanceTracker(
+    scraped_content, sentiment_analysis_results, ad_revenue)
 performance_tracker.generate_performance_reports()
